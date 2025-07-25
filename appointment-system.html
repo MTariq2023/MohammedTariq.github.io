@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Appointment Booking System | Mohammed Tariq</title>
+  <title>Appointment Booking System</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f9;
+      background-color: #f9f9f9;
       color: #333;
     }
 
@@ -21,48 +21,56 @@
 
     .container {
       max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
     h1 {
-      color: #007acc;
-      margin-top: 0;
+      margin: 0;
     }
 
-    .project-details {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
+    h2 {
+      color: #007acc;
+      margin-top: 2rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 10px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .project-details img {
-      max-width: 100%;
-      border-radius: 6px;
-      margin: 15px 0;
-    }
-
-    .button {
+    .btn {
       display: inline-block;
-      margin: 15px 10px 0 0;
       background-color: #007acc;
       color: white;
-      padding: 10px 16px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.2s ease;
     }
 
-    .button:hover {
-      background-color: #005f99;
+    .btn:hover {
+      background-color: #005c99;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #e0e0e0;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -73,19 +81,38 @@
   </header>
 
   <div class="container">
-    <div class="project-details">
-      <p>This is a desktop-based C# Windows Forms application that allows users to schedule, confirm, and view medical appointments. It uses a PostgreSQL database and Npgsql for database interaction. Key features include form input validation, confirmation dialogs, and a DataGridView to display appointment records.</p>
+    <p>
+      This Windows Forms desktop application allows users to manage and schedule appointments using a PostgreSQL cloud database.
+      It includes a user-friendly interface to add, view, and store appointment details.
+    </p>
 
-      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
-
-      <h2>Screenshots</h2>
-      <img src="images/appointment-1.png" alt="Appointment Form Screenshot">
-      <img src="images/appointment-2.png" alt="Appointment Saved Screenshot">
-      <img src="images/appointment-3.png" alt="Database Table Screenshot">
-
-      <a class="button" href="https://github.com/MohammedTariq/AppointmentSystem" target="_blank">View on GitHub</a>
-      <a class="button" href="index.html">← Back to Portfolio</a>
+    <div class="section">
+      <h2>📷 Screenshots</h2>
+      <img src="images/appointment-1.png" alt="Appointment Form UI">
+      <img src="images/appointment-2.png" alt="Appointment Saved UI">
+      <img src="images/appointment-3.png" alt="Appointment Table View">
+      <img src="images/appointment-4.png" alt="Confirmation Dialog Screenshot">
     </div>
+
+    <div class="section">
+      <h2>🛠️ Tools Used</h2>
+      <ul>
+        <li><strong>C# / .NET</strong> Windows Forms</li>
+        <li>PostgreSQL (hosted on Railway)</li>
+        <li>Visual Studio 2022</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💡 Features</h2>
+      <ul>
+        <li>Add and Save Appointment Data</li>
+        <li>View Appointment Table</li>
+        <li>Connects to Cloud Database</li>
+      </ul>
+    </div>
+
+    <a class="btn" href="https://github.com/MohammedTariq/AppointmentSystem" target="_blank">View on GitHub →</a>
   </div>
 
   <footer>
@@ -94,3 +121,4 @@
 
 </body>
 </html>
+
