@@ -34,22 +34,20 @@
       margin-top: 2rem;
     }
 
-    .section {
-      margin-bottom: 2rem;
-    }
-
     ul {
       padding-left: 1.2rem;
     }
 
     .screenshot-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+      justify-items: center;
     }
 
     .screenshot-grid img {
-      width: 100%;
+      width: 90%;
+      max-width: 350px;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
@@ -91,33 +89,27 @@
       It includes a user-friendly interface to add, view, and store appointment details.
     </p>
 
-    <div class="section">
-      <h2>📷 Screenshots</h2>
-      <div class="screenshot-grid">
-        <img src="images/appointment-1.png" alt="Appointment Form UI">
-        <img src="images/appointment-2.png" alt="Appointment Saved UI">
-        <img src="images/appointment-3.png" alt="Appointment Table View">
-        <img src="images/appointment-4.png" alt="Database Table Screenshot">
-      </div>
+    <h2>📷 Screenshots</h2>
+    <div class="screenshot-grid">
+      <img src="images/appointment-1.png" alt="Appointment Form UI">
+      <img src="images/appointment-2.png" alt="Appointment Saved UI">
+      <img src="images/appointment-3.png" alt="Appointment Table View">
+      <img src="images/appointment-4.png" alt="Database Table Screenshot">
     </div>
 
-    <div class="section">
-      <h2>🛠️ Tools Used</h2>
-      <ul>
-        <li><strong>C# / .NET</strong> Windows Forms</li>
-        <li>PostgreSQL (hosted on Railway)</li>
-        <li>Visual Studio 2022</li>
-      </ul>
-    </div>
+    <h2>🛠️ Tools Used</h2>
+    <ul>
+      <li><strong>C# / .NET</strong> Windows Forms</li>
+      <li>PostgreSQL (hosted on Railway)</li>
+      <li>Visual Studio 2022</li>
+    </ul>
 
-    <div class="section">
-      <h2>💡 Features</h2>
-      <ul>
-        <li>Add and Save Appointment Data</li>
-        <li>View Appointment Table</li>
-        <li>Connects to Cloud Database</li>
-      </ul>
-    </div>
+    <h2>💡 Features</h2>
+    <ul>
+      <li>Add and Save Appointment Data</li>
+      <li>View Appointment Table</li>
+      <li>Connects to Cloud Database</li>
+    </ul>
 
     <a class="btn" href="https://github.com/MohammedTariq/AppointmentSystem" target="_blank">View on GitHub →</a>
   </div>
@@ -128,5 +120,3 @@
 
 </body>
 </html>
-
-
