@@ -2,83 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Appointment Booking System</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment Booking System | Mohammed Tariq</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
       color: #333;
     }
+
     header {
       background-color: #007acc;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       text-align: center;
     }
-    header a {
-      color: white;
-      text-decoration: underline;
-      float: left;
-      margin-left: 20px;
-    }
+
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 2rem;
     }
-    img {
+
+    h1 {
+      color: #007acc;
+      margin-top: 0;
+    }
+
+    .project-details {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project-details img {
       max-width: 100%;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
+      margin: 15px 0;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .btn {
+
+    .button {
       display: inline-block;
-      background: #007acc;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
+      margin: 15px 10px 0 0;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 16px;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .btn:hover {
-      background: #005fa3;
+
+    .button:hover {
+      background-color: #005f99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <a href="../index.html">← Back</a>
     <h1>Appointment Booking System</h1>
   </header>
 
   <div class="container">
-    <p>This Windows Forms desktop application allows users to manage and schedule appointments using a PostgreSQL cloud database. It includes a user-friendly interface to add, view, and store appointment details.</p>
+    <div class="project-details">
+      <p>This is a desktop-based C# Windows Forms application that allows users to schedule, confirm, and view medical appointments. It uses a PostgreSQL database and Npgsql for database interaction. Key features include form input validation, confirmation dialogs, and a DataGridView to display appointment records.</p>
 
-    <h3>📷 Screenshots</h3>
-    <img src="../images/appointment-form.png" alt="Appointment Form UI">
-    <img src="../images/appointment-table.png" alt="Appointment Table UI">
+      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
 
-    <h3>🔧 Tools Used</h3>
-    <ul>
-      <li>C# / .NET Windows Forms</li>
-      <li>PostgreSQL (hosted on Railway)</li>
-      <li>Visual Studio 2022</li>
-    </ul>
+      <h2>Screenshots</h2>
+      <img src="images/appointment-1.png" alt="Appointment Form Screenshot">
+      <img src="images/appointment-2.png" alt="Appointment Saved Screenshot">
+      <img src="images/appointment-3.png" alt="Database Table Screenshot">
 
-    <h3>💡 Features</h3>
-    <ul>
-      <li>Add and Save Appointment Data</li>
-      <li>View Appointment Table</li>
-      <li>Connects to Cloud Database</li>
-    </ul>
-
-    <a href="https://github.com/MohammedTariq/appointment-system" target="_blank" class="btn">View on GitHub →</a>
+      <a class="button" href="https://github.com/MohammedTariq/AppointmentSystem" target="_blank">View on GitHub</a>
+      <a class="button" href="index.html">← Back to Portfolio</a>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
+  </footer>
+
 </body>
 </html>
