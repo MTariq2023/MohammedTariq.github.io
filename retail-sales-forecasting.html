@@ -1,94 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>U.S. Retail & Inflation Analysis with Tableau</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #007acc;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    section {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #007acc;
-    }
-
-    .btn-group {
-      margin-top: 20px;
-    }
-
-    a.btn {
-      display: inline-block;
-      background-color: #007acc;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    a.btn:hover {
-      background-color: #005f99;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e0e0e0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Sales Forecasting & Inflation Trends</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Analyzing and visualizing real vs nominal U.S. retail sales trends using Python and Tableau</h1>
+    </header>
 
-  <header>
-    <h1>Analyzing and Visualizing Real vs Nominal U.S. Retail Sales Trends</h1>
-    <p>Using Python and Tableau</p>
-  </header>
+    <main>
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>
+                This project cleans, merges, and analyzes U.S. retail sales and inflation data to compare nominal vs. real trends over time.
+                The processed dataset was visualized in Tableau to highlight the effect of inflation on retail spending patterns.
+            </p>
+            <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX</p>
 
-  <div class="container">
-    <section>
-      <h2>Project Overview</h2>
-      <p>
-        This project cleans, merges, and analyzes U.S. retail sales and inflation data to compare nominal vs. real trends over time. 
-        The processed dataset was visualized in Tableau to highlight the effect of inflation on retail spending patterns.
-      </p>
-      <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX</p>
-      <div class="btn-group">
-        <a class="btn" href="YOUR-TABLEAU-VISUALIZATION-LINK" target="_blank">View Tableau Visualization</a>
-        <a class="btn" href="https://github.com/MTariq2023/Retail-Sales-Forecasting-Inflation-Trends" target="_blank">View Code on GitHub</a>
-        <a class="btn" href="index.html">← Back to Portfolio</a>
-      </div>
-    </section>
-  </div>
+            <a href="https://public.tableau.com/app/profile/mohammed.tariq2342/viz/RetailSalesForecastingInflationTrendsU_S_/NominalvsReal?publish=yes" class="btn" target="_blank">View Tableau Visualization</a>
+            <a href="https://github.com/MTariq2023/Retail-Sales-Forecasting-Inflation-Trends" class="btn" target="_blank">View Code on GitHub</a>
+            <a href="index.html" class="btn">← Back to Portfolio</a>
+        </section>
 
-  <footer>
-    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
-  </footer>
+        <section class="project-images">
+            <h2>Project Images</h2>
+            <div class="image-gallery">
+                <img src="tab1.png" alt="Tableau Dashboard Screenshot 1">
+                <img src="tab2.png" alt="Tableau Dashboard Screenshot 2">
+                <img src="tab3.png" alt="Tableau Dashboard Screenshot 3">
+                <img src="tab4.png" alt="Tableau Dashboard Screenshot 4">
+                <img src="tab5.png" alt="Tableau Dashboard Screenshot 5">
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>© 2025 Mohammed Tariq · <a href="mailto:youremail@example.com">Email Me</a> · <a href="https://github.com/MTariq2023" target="_blank">GitHub</a></p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f7f7f7;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .project-overview, .project-images {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 5px 0 0;
+            padding: 10px 15px;
+            background: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .image-gallery img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </body>
 </html>
-
