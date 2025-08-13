@@ -33,9 +33,17 @@
       color: #007acc;
     }
 
+    .project-details {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
     .btn {
       display: inline-block;
       margin-top: 10px;
+      margin-right: 10px;
       background-color: #007acc;
       color: white;
       padding: 10px 16px;
@@ -58,23 +66,28 @@
 <body>
 
   <header>
-    <h1>Retail Sales Forecasting & Inflation Trends (U.S.)</h1>
-    <p>Analyzing and visualizing real vs nominal U.S. retail sales trends using Python and Tableau</p>
+    <h1>Retail Sales Forecasting & Inflation Trends</h1>
+    <p>U.S. Retail & Inflation Analysis with Tableau</p>
   </header>
 
   <div class="container">
 
-    <!-- About the Project -->
-    <section>
+    <section class="project-details">
       <h2>Project Overview</h2>
-      <p>This project cleans, merges, and analyzes U.S. retail sales and inflation data to compare nominal vs. real trends over time. The processed dataset was visualized in Tableau to highlight the effect of inflation on retail spending patterns.</p>
-      <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX</p>
-    </section>
+      <p>
+        This project analyzes U.S. retail sales data alongside CPI inflation rates to produce
+        both nominal and real (inflation-adjusted) sales trends. Using Tableau, the dashboard
+        visualizes monthly retail patterns, highlighting long-term shifts in consumer spending.
+      </p>
+      <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX datasets</p>
 
-    <!-- Links -->
-    <section>
-      <a class="btn" href="https://public.tableau.com/app/profile/mohammed.tariq2342/viz/RetailSalesForecastingInflationTrendsU_S_/NominalvsReal" target="_blank" rel="noopener">View Tableau Visualization</a>
-      <a class="btn" href="https://github.com/MTariq2023/Retail-Sales-Forecasting-Inflation-Trends" target="_blank" rel="noopener">View Code on GitHub</a>
+      <a class="btn" 
+         href="https://github.com/MTariq2023/Retail-Sales-Forecasting-Inflation-Trends" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        View Code on GitHub
+      </a>
+      <a class="btn" href="index.html">← Back to Portfolio</a>
     </section>
 
   </div>
