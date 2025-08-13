@@ -58,12 +58,6 @@
       margin-bottom: 1.5rem;
     }
 
-    .project img {
-      max-width: 100%;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
     .project a {
       display: inline-block;
       margin-top: 10px;
@@ -83,6 +77,16 @@
       text-align: center;
       padding: 1rem;
       background-color: #e0e0e0;
+    }
+
+    footer a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -114,37 +118,21 @@
       </ul>
     </section>
 
-    <!-- Project -->
+    <!-- Projects -->
     <section class="projects">
       <h2>Projects</h2>
+
+      <!-- Project 1 - Retail Sales -->
       <div class="project">
-  <h3>📈 Retail Sales Forecasting & Inflation Trends (U.S.)</h3>
-  <p>
-    Python + Tableau project combining U.S. Census Retail & Food Services Sales with BLS/FRED CPI to compute
-    <strong>inflation-adjusted (real)</strong> sales and visualize long-term trends (1992–2025).
-  </p>
-  <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX</p>
+        <h3>Retail Sales Forecasting & Inflation Trends (U.S.)</h3>
+        <p>Python + Tableau project combining U.S. Census Retail &amp; Food Services Sales with BLS/FRED CPI data to calculate inflation-adjusted (“real”) sales and visualize long-term U.S. retail trends (1992–2025).</p>
+        <p><strong>Tech Stack:</strong> Python (Pandas), Tableau, CSV/XLSX</p>
+        <a href="retail-sales-forecasting.html">View Project →</a>
+      </div>
 
-  <!-- Optional screenshot for visual punch -->
-  <img src="images/07_tableau_dashboard.png" alt="Nominal vs Real U.S. Retail Sales dashboard screenshot" />
-
-  <!-- Action buttons -->
-  <a href="https://public.tableau.com/app/profile/mohammed.tariq2342/viz/RetailSalesForecastingInflationTrendsU_S_/NominalvsReal" target="_blank" rel="noopener">
-    View Interactive Dashboard →
-  </a>
-  <a href="https://github.com/YourUser/retail-sales-forecasting-inflation-trends" target="_blank" rel="noopener">
-    View Code on GitHub →
-  </a>
-  <!-- If you publish a GitHub Pages project page, add this too: -->
-  <!--
-  <a href="https://youruser.github.io/retail-sales-forecasting-inflation-trends/" target="_blank" rel="noopener">
-    Project Page →
-  </a>
-  -->
-</div>
-
+      <!-- Project 2 - Appointment System -->
       <div class="project">
-        <h3>📅 Appointment Booking System</h3>
+        <h3>Appointment Booking System</h3>
         <p>A desktop-based C# Windows Forms application that lets users schedule medical appointments. The app connects to a PostgreSQL database using Npgsql and includes input validation, confirmation dialogs, and a DataGridView for viewing scheduled appointments.</p>
         <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
         <a href="appointment-system.html">View Project →</a>
@@ -155,12 +143,13 @@
   </div>
 
   <footer>
-    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
+    &copy; 2025 Mohammed Tariq ·
+    <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
+    <a href="https://github.com/MohammedTariq" target="_blank" rel="noopener">GitHub</a>
   </footer>
 
 </body>
 </html>
-
 
 
 
