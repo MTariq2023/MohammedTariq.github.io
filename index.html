@@ -5,103 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohammed Tariq | Developer Portfolio</title>
   <style>
-    body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f4f6f9;color:#333}
-    header{background:#007acc;color:#fff;padding:2rem;text-align:center}
-    .container{max-width:960px;margin:0 auto;padding:2rem}
-    section{margin-bottom:3rem}
-    h1,h2{color:#007acc}
+    /* Base */
+    :root {
+      --blue: #007acc;
+      --blue-dark: #005f99;
+      --bg: #f4f6f9;
+      --text: #333;
+      --card: #fff;
+      --shadow: 0 2px 6px rgba(0,0,0,.1);
+    }
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--blue);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+
+    section { margin-bottom: 3rem; }
+    h1, h2 { color: var(--blue); margin: 0 0 .75rem; }
 
     /* Skills */
-    .skills ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;list-style:none;padding:0;margin:0}
-    .skills li{background:#fff;padding:10px 15px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,.1);font-weight:600;text-align:center}
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills li {
+      background: var(--card);
+      padding: 10px 15px;
+      border-radius: 6px;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      text-align: center;
+    }
 
     /* Project cards */
-    .project{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);margin-bottom:1.5rem}
-
-    /* Regular links inside project cards (NOT the button) */
-    .project a:not(.project-link){color:#007acc;text-decoration:none;font-weight:600}
-    .project a:not(.project-link):hover{text-decoration:underline}
-
-    /* Single primary button */
-    .project .project-link{
-      display:inline-block;
-      margin-top:1rem;
-      padding:10px 20px;
-      background:#007acc;
-      color:#fff;                 /* keep white text */
-      border-radius:6px;
-      text-decoration:none;
-      font-weight:600;
+    .project {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
     }
-    .project .project-link:hover{
-      background:#005f99;
-      color:#fff;                 /* keep white on hover as well */
-      text-decoration:none;
+
+    /* Regular links inside project cards (NOT the primary button) */
+    .project a:not(.project-link) {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
     }
+    .project a:not(.project-link):hover {
+      text-decoration: underline;
+    }
+
+    /* Primary CTA button inside project cards */
+    .project a.project-link,
+    .project a.project-link:visited {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: var(--blue);
+      color: #fff;               /* stays white */
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 2px 0 rgba(0,0,0,.06);
+      transition: background .15s ease, transform .04s ease;
+    }
+    .project a.project-link:hover,
+    .project a.project-link:focus,
+    .project a.project-link:active {
+      background: var(--blue-dark);
+      color: #fff;               /* stays white on hover/focus */
+      text-decoration: none;
+    }
+    .project a.project-link:active {
+      transform: translateY(1px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0e0e0;
+    }
+    footer a { color: var(--blue); text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Mohammed Tariq</h1>
-  <p>Software Developer | Data Analyst | Business Analytics MS Student</p>
-</header>
+  <header>
+    <h1>Mohammed Tariq</h1>
+    <p>Software Developer | Data Analyst | Business Analytics MS Student</p>
+  </header>
 
-<div class="container">
+  <div class="container">
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m an aspiring Computer Science grad pursuing an M.S. in Business Analytics. At Rising Tide Learning, I
+        interned on the ESL version of BabbleBot for early-elementary students, where I built JavaScript features
+        including a kid-friendly responsive UI, interactive phonics and vocabulary activities with audio prompts,
+        hints, and immediate feedback, guided exercise flows with simple intent routing and input validation,
+        progress tracking with scores, levels, and streaks using safe local storage and basic sync, and a lightweight
+        teacher view to review attempts and manage content. Outside that internship, I’ve built a Python API ETL
+        that combines REST/JSON and SOAP/XML into AWS RDS PostgreSQL using SQLAlchemy with SSL, a C# Windows Forms
+        appointment system on PostgreSQL, and a Retail Sales versus Inflation analysis in Pandas with a Tableau
+        dashboard. I’ve also completed coursework in the other programming languages listed on my resume and apply
+        core CS foundations such as data structures, algorithms, databases, and software engineering practices.
+      </p>
+    </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an aspiring Computer Science grad pursuing an M.S. in Business Analytics. At Rising Tide Learning, I interned on the ESL version of BabbleBot for early-elementary students, where I built JavaScript features including a kid-friendly responsive UI, interactive phonics and vocabulary activities with audio prompts, hints, and immediate feedback, guided exercise flows with simple intent routing and input validation, progress tracking with scores, levels, and streaks using safe local storage and basic sync, and a lightweight teacher view to review attempts and manage content. Outside that internship, I’ve built a Python API ETL that combines REST/JSON and SOAP/XML into AWS RDS PostgreSQL using SQLAlchemy with SSL, a C# Windows Forms appointment system on PostgreSQL, and a Retail Sales versus Inflation analysis in Pandas with a Tableau dashboard. I’ve also completed coursework in the other programming languages listed on my resume and apply core CS foundations such as data structures, algorithms, databases, and software engineering practices.</p>
-  </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>C# / .NET</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>PostgreSQL / MySQL</li>
+        <li>Power BI</li>
+        <li>Streamlit</li>
+        <li>Flask</li>
+        <li>Git &amp; GitHub</li>
+        <li>AWS Lambda / S3</li>
+        <li>Scikit-learn / Pandas</li>
+      </ul>
+    </section>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Python</li><li>SQL</li><li>C# / .NET</li><li>C++</li><li>Java</li>
-      <li>PostgreSQL / MySQL</li><li>Power BI</li><li>Streamlit</li>
-      <li>Flask</li><li>Git &amp; GitHub</li><li>AWS Lambda / S3</li><li>Scikit-learn / Pandas</li>
-    </ul>
-  </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
 
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
+      <!-- API ETL Integration (Postgres) -->
+      <div class="project">
+        <h3>🔗 API ETL Integration (Postgres)</h3>
+        <p>
+          Python ETL that integrates <strong>REST/JSON (OpenWeather)</strong> and
+          <strong>SOAP/XML (CountryInfo WSDL)</strong>, transforms with pandas, and loads into
+          <strong>AWS RDS PostgreSQL</strong> via SQLAlchemy (SSL). Includes reporting view
+          <code>vw_weather_country</code> and setup/results screenshots.
+        </p>
+        <a class="project-link" href="api-etl-integration-postgres.html">View Project →</a>
+      </div>
 
-    <!-- API ETL Integration (Postgres) -->
-    <div class="project">
-      <h3>🔗 API ETL Integration (Postgres)</h3>
-      <p>Python ETL that integrates <strong>REST/JSON (OpenWeather)</strong> and <strong>SOAP/XML (CountryInfo WSDL)</strong>, transforms with pandas, and loads into <strong>AWS RDS PostgreSQL</strong> via SQLAlchemy (SSL). Includes reporting view <code>vw_weather_country</code> and setup/results screenshots.</p>
-      <a class="project-link" href="/api-etl-integration-postgres.html">View Project →</a>
-    </div>
+      <!-- Appointment Booking System -->
+      <div class="project">
+        <h3>📅 Appointment Booking System</h3>
+        <p>
+          A C# Windows Forms application integrated with PostgreSQL that allows users to book, view, and manage
+          appointments. Features include conflict checking, input validation, and a live data grid.
+        </p>
+        <a class="project-link" href="appointment-system.html">View Project →</a>
+      </div>
 
-    <!-- Appointment Booking System -->
-    <div class="project">
-      <h3>📅 Appointment Booking System</h3>
-      <p>A C# Windows Forms application integrated with PostgreSQL that allows users to book, view, and manage appointments. Features include conflict checking, input validation, and a live data grid.</p>
-      <a class="project-link" href="/appointment-system.html">View Project →</a>
-    </div>
+      <!-- Retail Sales Forecasting & Inflation Trends -->
+      <div class="project">
+        <h3>📈 Retail Sales Forecasting &amp; Inflation Trends (U.S.)</h3>
+        <p>
+          Nominal vs inflation-adjusted retail sales (Census + CPI) with a Tableau dashboard. Data cleaned and merged
+          in Python (Pandas), CPI-indexed, and exported for BI.
+        </p>
+        <a class="project-link" href="retail-sales-forecasting.html">View Project →</a>
+      </div>
+    </section>
+  </div>
 
-    <!-- Retail Sales Forecasting & Inflation Trends -->
-    <div class="project">
-      <h3>📈 Retail Sales Forecasting &amp; Inflation Trends (U.S.)</h3>
-      <p>Nominal vs inflation-adjusted retail sales (Census + CPI) with a Tableau dashboard. Data cleaned and merged in Python (Pandas), CPI-indexed, and exported for BI.</p>
-      <a class="project-link" href="/retail-sales-forecasting.html">View Project →</a>
-    </div>
-
-  </section>
-
-</div>
-
-<footer style="text-align:center;padding:1rem;background:#e0e0e0">
-  &copy; 2025 Mohammed Tariq ·
-  <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
-  <a href="https://github.com/MTariq2023" target="_blank" rel="noopener">GitHub</a>
-</footer>
+  <footer>
+    &copy; 2025 Mohammed Tariq ·
+    <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
+    <a href="https://github.com/MTariq2023" target="_blank" rel="noopener">GitHub</a>
+  </footer>
 
 </body>
 </html>
-
-
-
