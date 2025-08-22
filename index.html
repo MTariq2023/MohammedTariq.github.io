@@ -10,19 +10,34 @@
     .container{max-width:960px;margin:0 auto;padding:2rem}
     section{margin-bottom:3rem}
     h1,h2{color:#007acc}
+
     /* Skills */
     .skills ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;list-style:none;padding:0;margin:0}
     .skills li{background:#fff;padding:10px 15px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,.1);font-weight:600;text-align:center}
+
     /* Project cards */
     .project{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);margin-bottom:1.5rem}
-    .project a{color:#007acc;text-decoration:none;font-weight:600}
-    .project a:hover{text-decoration:underline}
+
+    /* Regular links inside project cards (NOT the button) */
+    .project a:not(.project-link){color:#007acc;text-decoration:none;font-weight:600}
+    .project a:not(.project-link):hover{text-decoration:underline}
+
     /* Single primary button */
-    .project-link{
-      display:inline-block;margin-top:1rem;padding:10px 20px;
-      background:#007acc;color:#fff;border-radius:6px;text-decoration:none;font-weight:600
+    .project .project-link{
+      display:inline-block;
+      margin-top:1rem;
+      padding:10px 20px;
+      background:#007acc;
+      color:#fff;                 /* keep white text */
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
     }
-    .project-link:hover{background:#005f99;text-decoration:none}
+    .project .project-link:hover{
+      background:#005f99;
+      color:#fff;                 /* keep white on hover as well */
+      text-decoration:none;
+    }
   </style>
 </head>
 <body>
@@ -58,7 +73,7 @@
     <div class="project">
       <h3>🔗 API ETL Integration (Postgres)</h3>
       <p>Python ETL that integrates <strong>REST/JSON (OpenWeather)</strong> and <strong>SOAP/XML (CountryInfo WSDL)</strong>, transforms with pandas, and loads into <strong>AWS RDS PostgreSQL</strong> via SQLAlchemy (SSL). Includes reporting view <code>vw_weather_country</code> and setup/results screenshots.</p>
-      <a class="project-link" href="api-etl-integration-postgres.html">View Project →</a>
+      <a class="project-link" href="/api-etl-integration-postgres.html">View Project →</a>
     </div>
 
     <!-- Appointment Booking System -->
@@ -82,12 +97,11 @@
 <footer style="text-align:center;padding:1rem;background:#e0e0e0">
   &copy; 2025 Mohammed Tariq ·
   <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
-  <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
+  <a href="https://github.com/MTariq2023" target="_blank" rel="noopener">GitHub</a>
 </footer>
 
 </body>
 </html>
-
 
 
 
